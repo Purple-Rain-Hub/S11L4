@@ -27,12 +27,12 @@ const ArticleList = () => {
 
   return (
     <>
-      <h1>ARTICOLI ASSURDI DAL MONDO😨</h1>
+      <h1 className="mt-5">ARTICOLI ASSURDI DAL MONDO😨</h1>
       {articles && (
-        <Row className="g-2 mt-3">
+        <Row className="g-2 mt-4">
           {articles.map((a) => {
             return (
-              <Col xs={3} key={a.id}>
+              <Col xs={4} key={a.id}>
                 <SingleArticle article={a} />
               </Col>
             );

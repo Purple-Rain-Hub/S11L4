@@ -12,12 +12,16 @@ const SingleArticle = (props: funcComponentProps) => {
   return (
     <>
       <Card
-        style={{ width: "300px", height: "380px" }}
+        style={{ width: "400px", height: "400px" }}
         onClick={() => {
           navigate(`/${props.article.id}`);
         }}
       >
-        <Card.Img variant="top" src={props.article.image_url} />
+        <Card.Img
+          variant="top"
+          src={props.article.image_url}
+          style={{ height: "250px" }}
+        />
         <Card.Body>
           <Card.Title style={{ color: "black" }}>
             {props.article.title}
