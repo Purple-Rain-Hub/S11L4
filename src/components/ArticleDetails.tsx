@@ -34,7 +34,9 @@ const ArticleDetails = () => {
           <h6>{articles?.summary}</h6>
           <p className="mt-2">
             Article from {articles?.news_site} in{" "}
-            {new Date(articles?.published_at).toLocaleDateString()}
+            {articles?.published_at
+              ? new Date(articles.published_at).toLocaleDateString()
+              : "unknown"}
           </p>
         </div>
       </div>
